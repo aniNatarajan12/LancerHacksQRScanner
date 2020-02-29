@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>572414606223-qvu1j17rq6369uu6cujn4ppdhnsp6jeu.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.572414606223-qvu1j17rq6369uu6cujn4ppdhnsp6jeu</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBCm2Blr5KXybCtbjo1VDXy-lu4t7GNYmQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>572414606223</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.Anirudh.LancerHacks20</string>
+	<key>PROJECT_ID</key>
+	<string>lancerhacks20</string>
+	<key>STORAGE_BUCKET</key>
+	<string>lancerhacks20.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:572414606223:ios:51eb2a89da0d62a7</string>
+	<key>DATABASE_URL</key>
+	<string>https://lancerhacks20.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QRCodeScanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d9Y-7H-Fqv">
+                                <rect key="frame" x="20" y="44" width="335" height="373"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User: anirudhj12" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKs-zO-WJi">
+                                <rect key="frame" x="33" y="346" width="309" height="57"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="xeg-SM-p5w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FiG-il-SLM">
+                                <rect key="frame" x="93" y="688" width="189" height="75"/>
+                                <color key="backgroundColor" red="0.87188689720000001" green="0.8007898698" blue="0.37928688630000001" alpha="0.59452589899999997" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="189" id="lT2-nY-JxA"/>
+                                    <constraint firstAttribute="height" constant="75" id="ueD-jg-Jp3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Add Points">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qY1-g4-Ojy"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fCK-Xb-1TG">
+                                <rect key="frame" x="24" y="444" width="326" height="216"/>
+                                <color key="backgroundColor" red="0.87188689718984769" green="0.80078986984849232" blue="0.37928688627545626" alpha="0.59452589897260277" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="d9Y-7H-Fqv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="43N-gN-BOW"/>
+                            <constraint firstItem="fCK-Xb-1TG" firstAttribute="top" secondItem="xKs-zO-WJi" secondAttribute="bottom" constant="41" id="9n8-aW-Rpm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fCK-Xb-1TG" secondAttribute="trailing" constant="25" id="Gr0-hv-hiH"/>
+                            <constraint firstItem="xKs-zO-WJi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="POR-fe-HJW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FiG-il-SLM" secondAttribute="bottom" constant="15" id="QHf-gP-B5z"/>
+                            <constraint firstItem="fCK-Xb-1TG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="Spn-M5-08G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d9Y-7H-Fqv" secondAttribute="trailing" constant="20" id="Sqm-SD-TZd"/>
+                            <constraint firstItem="FiG-il-SLM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZLT-f1-Ujf"/>
+                            <constraint firstItem="fCK-Xb-1TG" firstAttribute="top" secondItem="d9Y-7H-Fqv" secondAttribute="bottom" constant="27" id="aTV-WK-2Rv"/>
+                            <constraint firstItem="fCK-Xb-1TG" firstAttribute="top" secondItem="d9Y-7H-Fqv" secondAttribute="bottom" constant="27" id="ckh-Do-Npb"/>
+                            <constraint firstItem="FiG-il-SLM" firstAttribute="top" secondItem="fCK-Xb-1TG" secondAttribute="bottom" constant="28" id="iBZ-yu-oVS"/>
+                            <constraint firstItem="d9Y-7H-Fqv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="swh-r3-3Sd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xKs-zO-WJi" secondAttribute="trailing" constant="33" id="uor-rr-qn8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="FiG-il-SLM" id="dti-wE-0fp"/>
+                        <outlet property="cameraView" destination="d9Y-7H-Fqv" id="Qxf-2R-rjI"/>
+                        <outlet property="pickerView" destination="fCK-Xb-1TG" id="tPJ-sq-kYB"/>
+                        <outlet property="textLabel" destination="xKs-zO-WJi" id="hXM-Ad-16J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="112.3152709359606"/>
+        </scene>
+    </scenes>
+</document>
